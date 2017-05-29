@@ -1,0 +1,120 @@
+.not-home { 
+    .top-footer {
+	   background: $bg-gray;
+	}
+}
+
+.site-footer {
+
+   padding: 10px 0 20px 0;
+   background: $navy;
+	   .signup-form {
+   }
+   .fat-footer {
+
+		margin-top: 50px;
+		@include maxv(992)  {
+			margin-top: 0;
+		    border-top: 1px solid #084469;
+		    padding-top: 30px;
+		}
+      .pad-right {
+      	padding-right: 50px;
+      		@include maxv(992)  {
+      			padding-right: 0;
+			}
+      }
+	  .footer-logo {
+	  	 margin-bottom: 1.5em;
+
+	  	 img {
+	  	 	max-width: 300px;
+	  	 }
+	  }	
+      .description {
+		    color: #fff;
+		    font-size: 1em;
+
+		    p {
+		    	font-size: 20px;
+		    }
+	   }
+	   .menu {
+	   	   list-style: none;
+
+	   	   ul {
+	   	   	  li {
+	   	   	  	margin-top: 0.2em;
+	   	   	  	margin-bottom: 0.2em;
+	   	   	  }
+	   	   }
+		   &--footer {
+	   	    	@include maxv(992)  { 
+	   	    		margin: 30px 0;
+	   	    		padding: 0;
+	   	    	}
+		   	    li {
+		   	    	@include maxv(992)  { 
+		   	    		display: inline-block;
+    					margin: 0 5px 0 0;
+		   	    	}
+		   	    	a {
+		   	    		    font-size: 1.1em;
+						    padding: 1px 5px;
+						    display: inline-block;
+						    background: $orange;
+						    color: #fff;
+						    margin-bottom: 5px;
+						    font-family: $font--bariolregular;
+
+						    &:hover {
+						    	background-color: #00bce4;
+						    	text-decoration: none;
+						    }
+		   	    	}
+		   	    }
+		    }
+		    &--social {
+
+		   	    li {
+		   	    	display: inline-block;	
+
+		   	    	a {
+						    font-size: 0.9em;
+						    text-align: center;
+						    padding: 2px;
+						    display: inline-block;
+						    background: #fff;
+						    color: #00274d;
+						    margin-bottom: 5px;
+						    height: 24px;
+						    width: 24px;
+						    border-radius: 50%;
+
+						    &:hover {
+						    	background-color: $orange;
+						    	text-decoration: none;
+						    }
+		   	    	}
+		   	    }
+		    }
+			 
+      	}
+      	.facebook-feed {
+      		.feed-header {
+      			color: #fff;
+      			font-size: 21px;
+      		}
+      		#cff .cff-item {
+			    padding: 10px 0 15px 0;
+			}
+
+      	}
+      	.copyright, .tagline {
+      		margin-top: 1.9em;
+	  		color: #fff;
+	  	}
+  	}
+
+}
+

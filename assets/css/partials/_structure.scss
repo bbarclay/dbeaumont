@@ -1,0 +1,339 @@
+/* ----------------------------------------------------------------------------
+ * Structure
+ * ------------------------------------------------------------------------- */
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use i.e. 1rem = 10px*/
+html {
+    font-size: 62.5%;
+    height:100%;
+    min-height:100%;
+}
+
+body {
+    font: 400 18px/1.4 sans-serif;
+    color: $navy;
+    margin: 0;
+    background: $w !important;
+    height:100%;
+    min-height:100%;
+
+
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content: ' ';
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+textarea:focus, 
+input:focus {
+    outline: 0;
+    border: 1px solid $navy;
+}
+
+ol, ul {
+
+}
+select{
+    width: 100%;
+}
+.container {
+    max-width: 960px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font--bariolregular;
+}
+
+
+/*------------------------------------*\
+    #STRUCTURAL FROM OLD THEME
+\*------------------------------------*/
+.pad-m-top {
+    margin-top: 3em;
+}
+.content-sidebar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #FFF;
+}
+@media (min-width: 1150px) {
+  .content-sidebar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+/*------------------------------------*\
+    #HELPER CLASS
+\*------------------------------------*/
+
+.entry-content {
+    .list-heading {
+       color: $orange;
+       font-size: 2em;
+    }
+    ul {
+       padding-left: 0;
+       li {
+            position: relative;
+            padding-left: 35px;
+            font-size: 20px;
+              &:before {
+                  position: absolute;
+                  left: 0;
+                  content: url(assets/img/check-new.svg);
+                  display: inline-block;
+                  vertical-align: text-bottom;
+                  width: 24px;
+                  height: 24px;
+                  margin-right: 0.5em;
+                  backface-visibility: hidden;
+              }
+       }
+    }
+    h1 {
+        font-family: $font--bariolbold; 
+        font-size: 2.8em;
+
+        @include maxv(992) {
+            font-size: 2.5em;
+        }
+    }
+    h2 {
+        font-family: $font--bariolbold; 
+        font-size: 2em;
+
+        @include maxv(992) {
+            font-size: 1.8em;
+        }
+    }
+    h3 {
+        font-family: $font--bariolregular;
+        font-size: 2em;
+       
+
+        @include maxv(992) {
+            font-size: 1.8em;
+        }  
+    }
+    h4 {
+        font-family: $font--bariolregular;
+        font-size: 1.8em;
+
+        @include maxv(992) {
+            font-size: 1.5em;
+        }
+
+
+    }
+    h5 {
+        font-family: $font--bariolregular;
+        font-size: 1.6em;
+ 
+
+        @include maxv(992) {
+            font-size: 1.3em;
+        }
+    }
+    h6 {
+        font-size: 1.4em;
+
+        @include maxv(992) {
+            font-size: 1.2em;
+        }
+    }
+    /**/
+    .text-orange {
+        color: $orange;
+    }
+    .text-navy {
+        color: $navy;
+    }
+
+
+}
+
+
+
+/*------------------------------------*\
+    #Button
+\*------------------------------------*/
+.grid{
+   &--feature-buttons {
+        margin-left: -5px !important;
+        margin-right: -5px !important;
+        .grid__column {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 100%;
+            @include minv(992) {
+                width: 50%;
+            }
+
+            a {
+                display: block;
+                margin-bottom: 0.5em;
+                padding: 0.5em 0;
+                border-radius: 3px;
+                text-align: center;
+                background: $navy;
+                color: #FFF;
+                line-height: 1;
+                font-family: $font--bariolbold;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .btn-orange {
+                background: $orange;
+
+                &:hover {
+                    background: $green;
+                }
+            }
+            .btn-green {
+                background: $green;
+
+                &:hover {
+                    background: $green;
+                }
+            }
+            .btn-lightorange {
+                background: $lightOrange;
+
+                &:hover {
+                    background: $green;
+                }
+            }
+
+
+
+        }
+    }
+}
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+.spacing-top {
+    margin-top: 3em;
+}
+.col-custom {
+  @include maxv(992) {
+    margin-bottom: 30px;
+   }
+}
+
+/*------------------------------------*\
+    #TESTIMONIALS
+\*------------------------------------*/
+
+.testimonial {
+    &__quote {
+        h1 {
+            text-align: left !important;
+            padding-left: 0;
+        }
+        @include maxv(768) {
+            text-align: center;
+        }
+    }
+    &__image {
+            margin-top: 2em;
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            @include maxv(992) {
+                    margin: 1em auto;
+            }
+       img {
+            display: block;
+       }
+    }
+    &__name {
+        font-family: $font--bariolregular;
+        font-size: 1.3em;
+        color: $orange;
+        text-transform: uppercase;
+        font-style: normal;
+    }
+    &__subtitle {
+        font-family: $font--bariolregular;
+        color: $orange;
+    }
+    &__attribution {
+        @include maxv(768) {
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+/*------------------------------------*\
+    #VIDEO FORMAT
+\*------------------------------------*/
+
+
+.video-container  {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe, object, embed
+     {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+     }
+}

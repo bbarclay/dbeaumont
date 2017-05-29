@@ -1,0 +1,120 @@
+/* ----------------------------------------------------------------------------
+ * Variables
+ * ------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+ * Primary Color Variants
+ * ------------------------------------------------------------------------- */
+
+$c1 		: #dedede;
+$c2 		: #292929;
+
+$w			: #ffffff;
+$b			: #000000;
+$gb			: #686868;
+$g  		: #35ad68;
+$y			: #FFFDD2;
+
+$navy       : #00264c;
+$blue 		: #2287c8;
+$lightblue  : #0077c0;
+$green      : #7ac143;
+$lightOrange : #f89b6c;
+
+$text 		: #646465;
+$gray-bg    : #faf9f8;
+
+/* ----------------------------------------------------------------------------
+ * Primary Color Variants
+ * ------------------------------------------------------------------------- */
+
+
+// ----------------------------------------------------------------------
+	// Layout Breakpoints
+// ----------------------------------------------------------------------
+$maxWidth: 1280;
+
+
+// ----------------------------------------------------------------------
+	// Font Sizes
+// ----------------------------------------------------------------------
+$regularSize: 18;
+
+
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+
+
+$font--bariolregular: 'bariolregular', sans-serif;
+$font--bariolbold: 'bariolbold', sans-serif;
+$font--bariol-ri: 'bariolregular-italic', sans-serif;
+$font--bariol-li: 'bariollight-italic', sans-serif;
+$font--bariol-light: 'bariol-light', sans-serif;
+
+$font--avenir: 'avenir', sans-serif;
+$font--avenir-b: 'avenir-black', sans-serif;
+$font--avenir-h: 'avenir-heavy', sans-serif;
+
+$helvetica: Helvetica, Arial, sans-serif;
+
+$font--GeorgeSemiBold: 'Geogrotesque-SemiBold', sans-serif;
+$font-GeorgeMedium: 'Geogrotesque-Medium', sans-serif;
+$font-GeorgeLight: 'Geogrotesque-Light', sans-serif;
+
+$font-pt: 'pt-sans', sans-serif;
+
+
+// ----------------------------------------------------------------------
+  // Grid
+// ----------------------------------------------------------------------
+$grid-columns: 12;
+
+
+// ----------------------------------------------------------------------
+  // Primary Color Variants
+// ----------------------------------------------------------------------
+$primary: #00274d;
+$secondary: #00bce4;
+$white: #fff;
+$medium-blue: #0077c0;
+$lighter-blue: #02bce5;
+$orange: #f15d22;
+$green: #79c142;
+$light-gray: #f6f6f7;
+
+$navy: #00274d;
+$gray: #bebfbf;
+
+$bg-gray: #faf9f8;
+
+
+// ----------------------------------------------------------------------
+  // Extras
+// ----------------------------------------------------------------------
+.show {
+	display: block;
+}
+.btn-green {
+	background-color: $green;
+}
+.btn-blue {
+	background-color: $blue;
+}
+.btn-orange {
+	background-color: $orange;
+}
+.btn:hover {
+	background-color: $blue;
+}
+
+
+// ----------------------------------------------------------------------
+  // Paddings
+// ----------------------------------------------------------------------
+$xtb-pad: 1.2em 0;
+$stb-pad: 2.3em 0;
+$mtb-pad: 3em 0;
+$ltb-pad: 5em 0;
+
+

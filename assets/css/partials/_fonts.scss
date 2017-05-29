@@ -1,0 +1,79 @@
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+
+//Georgrotesque
+
+@include fontface('Geogrotesque-SemiBold', 'assets/fonts/dale-fonts', '2705D8_9_0');
+
+@import "assets/fonts/Genericons/genericons";
+
+//Bario
+
+@font-face { 
+    font-family: 'bariolbold';  
+    src: url('assets/fonts/Bariol/Bariol_Bold.otf'); 
+    src: url('assets/fonts/Bariol/Bariol_Bold.otf#iefix') format('embedded-opentype'),
+         url('assets/fonts/Bariol/Bariol_Bold.woff') format('woff'),
+         url('assets/fonts/Bariol/Bariol_Bold.ttf')  format('truetype'),
+         url('assets/fonts/Bariol/Bariol_Bold.svg#svgbariolbold') format('svg');
+ }
+
+
+@font-face { 
+    font-family: 'bariolregular';  
+    src: url('assets/fonts/Bariol/Bariol_Regular.otf');
+    src: url('assets/fonts/Bariol/Bariol_Regular.otf#iefix') format('embedded-opentype'),
+         url('assets/fonts/Bariol/Bariol_Regular.woff') format('woff'),
+         url('assets/fonts/Bariol/Bariol_Regular.ttf')  format('truetype'),
+         url('assets/fonts/Bariol/Bariol_Regular.svg#svgbariolregular') format('svg');
+}
+
+@font-face { 
+    font-family: 'bariol-light';  
+    src: url('assets/fonts/Bariol/Bariol_Light.otf');
+    src: url('assets/fonts/Bariol/Bariol_Light.otf#iefix') format('embedded-opentype'),
+         url('assets/fonts/Bariol/Bariol_Light.woff') format('woff'),
+         url('assets/fonts/Bariol/Bariol_Light.ttf')  format('truetype'),
+         url('assets/fonts/Bariol/Bariol_Light.svg#svgbariol-light') format('svg');
+}
+
+@font-face { 
+    font-family: 'bariolregular-italic';  
+    src: url('assets/fonts/Bariol/Bariol_Regular_Italic.otf');
+    src: url('assets/fonts/Bariol/Bariol_Regular_Italic.otf#iefix') format('embedded-opentype'),
+         url('assets/fonts/Bariol/Bariol_Regular_Italic.woff') format('woff'),
+         url('assets/fonts/Bariol/Bariol_Regular_Italic.ttf')  format('truetype'),
+         url('assets/fonts/Bariol/Bariol_Regular_Italic.svg#svgbariolregular-italic') format('svg');    
+}
+
+@font-face { 
+    font-family: 'bariollight-italic';  
+    src: url('assets/fonts/Bariol/Bariol_Light_Italic.otf'); 
+    src: url('assets/fonts/Bariol/Bariol_Light_Italic.otf#iefix') format('embedded-opentype'),
+         url('assets/fonts/Bariol/Bariol_Light_Italic.woff') format('woff'),
+         url('assets/fonts/Bariol/Bariol_Light_Italic.ttf')  format('truetype'),
+         url('assets/fonts/Bariol/BBariol_Light_Italic.svg#svgbariollight-italic') format('svg');
+}
+
+@font-face { 
+    font-family: 'avenir';  
+    src: url('assets/fonts/Avenir/Avenir-Medium.ttf'); 
+}
+@font-face { 
+    font-family: 'avenir-black';  
+    src: url('assets/fonts/Avenir/Avenir-Black.ttf'); 
+}
+@font-face { 
+    font-family: 'avenir-heavy';  
+    src: url('assets/fonts/Avenir/Avenir-Heavy.ttf'); 
+}
+@font-face { 
+    font-family: 'avenir-light';  
+    src: url('assets/fonts/Avenir/Avenir-Light.ttf'); 
+}
+
+@font-face { 
+    font-family: 'pt-sans';  
+    src: url('assets/fonts/PT-sans/PTC55F.ttf'); 
+}

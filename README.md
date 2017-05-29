@@ -1,2 +1,1 @@
-# dbeaumont
-for wp pusher
+#Dale Beaumont
