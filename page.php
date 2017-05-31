@@ -4,7 +4,7 @@
 	<div class="container spacing-top">
 		<div class="row">
 			<div class="col-md-12 content">
-				<div id="content" class="content" role="main" itemscope itemprop="mainContentOfPage">
+				<div id="content" class="content" role="main">
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'partials/content', 'page' ); ?>
 						
