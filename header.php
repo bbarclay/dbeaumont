@@ -15,7 +15,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div id="wrapper" class="wrapper">
-	<header id="top-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+	<header id="top-header" itemscope itemtype="http://schema.org/WPHeader">
 		<div class="site-header">
 			 <div class="container">
 			 	  <div class="row">
@@ -31,7 +31,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </ul>	
 			 	  	  </div>
 			 	  	  <div class="col-xs-12 col-sm-12 col-md-9">
-			 	  	  		<nav class="navbar" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+			 	  	  		<nav class="navbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
 
 			 	  	  		    <?php
 						            wp_nav_menu( array(
