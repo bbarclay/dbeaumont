@@ -8,15 +8,15 @@
 
   <?php get_template_part( 'partials/head' ); ?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8HCL7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div id="wrapper" class="wrapper">
-	<header id="top-header">
-		<div class="site-header" itemscope itemprop="http://schema.org/WPHeader">
+	<header id="top-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<div class="site-header">
 			 <div class="container">
 			 	  <div class="row">
 			 	  	  <div class="col-xs-8 col-sm-4 col-md-3">
@@ -31,7 +31,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </ul>	
 			 	  	  </div>
 			 	  	  <div class="col-xs-12 col-sm-12 col-md-9">
-			 	  	  		<nav class="navbar" itemscope itemprop="http://schema.org/SiteNavigationElement">
+			 	  	  		<nav class="navbar" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 
 			 	  	  		    <?php
 						            wp_nav_menu( array(

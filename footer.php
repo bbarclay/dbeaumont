@@ -80,7 +80,7 @@
 	</section>
 	<footer class="site-footer">
 				<div class="container">
-					<div class="footer  clearfix" itemscope itemprop="http://schema.org/WPFooter">
+					<div class="footer  clearfix" itemscope itemtype="http://schema.org/WPFooter">
 						<?php get_template_part( 'partials/fat-footer' ); ?>
 					</div>
 				</div>
