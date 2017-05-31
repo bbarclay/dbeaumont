@@ -117,62 +117,64 @@
   	}
 
 }
-.signup-form--horizontal  {
-	.moonray-form {
+.signup-form
+   &--horizontal  {
+		.moonray-form {
 
-        .moonray-form-clearfix {
-				background: #021537;
-				padding: 5px;
-				border-radius: 6px;
-					@include maxv(992)  {
-					    padding: 0;
-					}
-				.moonray-form-element-wrapper {
+	        .moonray-form-clearfix {
+					background: #021537;
 					padding: 5px;
-				    float: left;
-					width: 50%;
-						@include maxv(768)  {
-						    float: none;
-						    width: 100%;
+					border-radius: 6px;
+						@include maxv(992)  {
+						    padding: 0;
 						}
-				    .moonray-form-label {
-				    	display: none;
-				    }
-				    .moonray-form-input {
-						border-radius: 6px;
-						height: 52px;
-						width: 100%;
-					    height: 46px;
-					    margin: 0;
-					    padding: 0 10px;
-					    font-size: 16px !important;
-				    }
-				    .signup-form input, 
-				    .signup-form select {
-						border: 1px solid #CCC;
-				    }
-					
-				}
-				.moonray-form-input-type-hidden {
-					padding: 0;
-				}
-				.moonray-form-input-type-submit {
+					.moonray-form-element-wrapper {
+						padding: 5px;
+					    float: left;
+						width: 50%;
+							@include maxv(768)  {
+							    float: none;
+							    width: 100%;
+							}
+					    .moonray-form-label {
+					    	display: none;
+					    }
+					    .moonray-form-input {
+							border-radius: 6px;
+							height: 52px;
+							width: 100%;
+						    height: 46px;
+						    margin: 0;
+						    padding: 0 10px;
+						    font-size: 16px !important;
+					    }
+					    .signup-form input, 
+					    .signup-form select {
+							border: 1px solid #CCC;
+					    }
+						
+					}
+					.moonray-form-input-type-hidden {
+						padding: 0;
+					}
+					.moonray-form-input-type-submit {
 
-					@include maxv(960) {
-						width: 100% !important;
+						@include maxv(960) {
+							width: 100% !important;
+						}
+						 input[type='submit'] {
+							background-color: $orange;
+							font-family: $font--bariolbold;
+							color: #fff;
+							text-transform: uppercase;
+						}
 					}
-					 input[type='submit'] {
-						background-color: $orange;
-						font-family: $font--bariolbold;
-						color: #fff;
-						text-transform: uppercase;
+					&:after {
+				    	clear: both;
+				    	content: '';
+				    	display: block;
 					}
-				}
-				&:after {
-			    	clear: both;
-			    	content: '';
-			    	display: block;
-				}
-		}			
-	}
+			}			
+		}
+    }
 }
