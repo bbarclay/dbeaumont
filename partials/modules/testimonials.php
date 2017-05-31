@@ -34,7 +34,7 @@
 					 	</div>
 					 	<div class="col-md-9"> 	  
 					 	 	  <div class="testimonial__quote">
-					 	 	  	  <p><?php the_content(); ?></p>
+					 	 	  	  <p><?php echo get_the_content(); ?></p>
 					 	 	  </div>
 							  <cite class="testimonial__attribution">
 										<span class="testimonial__name"><?php the_title(); ?>,</span>
