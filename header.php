@@ -8,7 +8,7 @@
 
   <?php get_template_part( 'partials/head' ); ?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope itemprop="http://schema.org/WebPage">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8HCL7"
