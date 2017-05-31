@@ -30,8 +30,8 @@ include( DB_THEME_DIR . '/inc/template-tags.php' );
 
 // Actions and Filters
 add_action( 'after_setup_theme', 'daleb_setup' );
-add_action( 'wp_enqueue_scripts', 'daleb_scripts');
 add_action( 'wp_enqueue_scripts', 'daleb_styles'); 
+add_action( 'wp_enqueue_scripts', 'daleb_scripts');
 add_action( 'wp_enqueue_scripts', 'daleb_enqueue_comments_reply' );
 add_action( 'widgets_init', 'daleb_register_widgets' );
 add_action( 'customize_register', 'daleb_register_custiomizer_controls' );

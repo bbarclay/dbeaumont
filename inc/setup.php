@@ -67,17 +67,17 @@ function daleb_scripts()
          *     Order is important
          *
          */
-        wp_deregister_script('jquery');
-		wp_deregister_script('jquery-migrate');
+        //wp_deregister_script('jquery');
+		//wp_deregister_script('jquery-migrate');
         //wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '', true); // Enqueue it!
         //wp_enqueue_script('jquery-migrate', 'https://code.jquery.com/jquery-migrate-3.0.0.js', array('jquery'), '', true); // Enqueue it!
 
         //wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '', true); // Enqueue it!
-        wp_register_script('daleb_vendorsJs', get_template_directory_uri() . '/assets/js/vendors.min.js', array(), '', true); // Custom scripts
-        wp_enqueue_script('daleb_vendorsJs'); // Enqueue it!
+        wp_register_script('dbvendorsJs', get_template_directory_uri() . '/assets/js/vendors.min.js', array(), '1.0', true); // Custom scripts
+        wp_enqueue_script('dbvendorsJs'); // Enqueue it!
 
-        wp_register_script('daleb_customJs', get_template_directory_uri() . '/assets/js/custom.min.js', array(), '', true); // Custom scripts
-        wp_enqueue_script('daleb_customJs'); // Enqueue it!
+        wp_register_script('dbcustomJs', get_template_directory_uri() . '/assets/js/custom.min.js', array(), '1.0', true); // Custom scripts
+        wp_enqueue_script('dbcustomJs'); // Enqueue it!
 
     }
 
