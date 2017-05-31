@@ -2445,7 +2445,8 @@ a{-webkit-transition:color 150ms ease-out,background 150ms ease-out;transition:c
 .signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper .moonray-form-input{border-radius:6px;height:52px;width:100%;height:46px;margin:0;padding:0 10px;font-size:16px !important}
 .signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper .signup-form input,.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper .signup-form select{border:1px solid #CCC}
 .signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-hidden{padding:0}
-.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit input[type='submit']{background-color:#f15d22;font-family:"bariolbold",sans-serif;color:#fff;text-transform:uppercase}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit input[type='submit']{background-color:#f15d22;font-family:"bariolbold",sans-serif;color:#fff;text-transform:uppercase;-webkit-transition:background 1s ease-in-out 0;transition:background 1s ease-in-out 0}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit input[type='submit']:hover{background-color:#79c142}
 .signup-form--horizontal .moonray-form .moonray-form-clearfix:after{clear:both;content:'';display:block}
 .signup-form--vertical{background:#00274d}
 .signup-form--vertical h2,.signup-form--vertical .subheading{color:#fff;text-align:center}

@@ -112,6 +112,11 @@
 						font-family: $font--bariolbold;
 						color: #fff;
 						text-transform: uppercase;
+						@include single-transition(background, 1s, ease-in-out, 0);
+
+						&:hover {
+						   background-color: $green;
+						}
 					}
 				}
 				&:after {
