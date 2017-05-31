@@ -2607,7 +2607,7 @@ h6,.h6{font-size:1em}
 #hero h1 .caps{font-family:"bariolbold",sans-serif;text-transform:uppercase;font-size:1.4em;margin-top:20px;-webkit-animation-delay:2s;animation-delay:2s;color:#00274d}
 #hero h2{text-align:right;color:#00274d;-webkit-animation-delay:2.5s;animation-delay:2.5s;font-size:1.6em;font-family:"bariolregular",sans-serif}
 #hero h2 span{display:block}
-#signup{padding:1.2em 0 0 0;margin:0;background:#00274d}
+#signup{padding:1.2em 0;margin:0;background:#00274d}
 #signup .module__heading,#signup .module__subheading{color:#fff;text-align:center}
 #signup .module__heading{margin:0;text-transform:capitalize;font-family:"bariolbold",sans-serif;font-size:2.3em;line-height:1}
 #signup .module__heading--caps{color:#f15d22;text-transform:uppercase}
