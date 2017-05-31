@@ -2515,6 +2515,14 @@ a{-webkit-transition:color 150ms ease-out,background 150ms ease-out;transition:c
 .site-footer .fat-footer .facebook-feed .feed-header{color:#fff;font-size:21px}
 .site-footer .fat-footer .facebook-feed #cff .cff-item{padding:10px 0 15px 0}
 .site-footer .fat-footer .copyright,.site-footer .fat-footer .tagline{margin-top:1.9em;color:#fff}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix{background:#021537;padding:5px;border-radius:6px}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper{padding:5px;float:left;width:50%}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper .moonray-form-label{display:none}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper .moonray-form-input{border-radius:6px;height:52px;width:100%;height:46px;margin:0;padding:0 10px;font-size:16px !important}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper .signup-form input,.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper .signup-form select{border:1px solid #CCC}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-hidden{padding:0}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit input[type='submit']{background-color:#f15d22;font-family:"bariolbold",sans-serif;color:#fff;text-transform:uppercase}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix:after{clear:both;content:'';display:block}
 h1,.h1{font-size:2.5em}
 h2,.h2{font-size:2em}
 h3,.h3{font-size:1.75em}
@@ -3030,6 +3038,7 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 .site-footer .fat-footer .pad-right{padding-right:0}
 .site-footer .fat-footer .menu--footer{margin:30px 0;padding:0}
 .site-footer .fat-footer .menu--footer li{display:inline-block;margin:0 5px 0 0}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix{padding:0}
 .banner{background-position:65% 0}
 .entry__title{margin-top:30px;line-height:1;font-size:2em !important}
 .module__media{padding-bottom:2em}
@@ -3047,6 +3056,7 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 }@media(max-width:992px) and (max-width:480px){#top-header .site-header .mobile-icons li{margin-left:15px}
 }@media(max-width:992px) and (max-width:320px){#top-header .site-header .mobile-icons li{margin-left:10px}
 }@media(max-width:960px){.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit{width:100% !important}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit{width:100% !important}
 }@media(max-width:768px){.testimonial__quote{text-align:center}
 .testimonial__attribution{text-align:center;display:block}
 .slick-arrow{top:10%;width:30px;height:30px}
@@ -3057,6 +3067,7 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 .signup-form--vertical .heading{font-size:2em}
 .signup-form--vertical .subheading{font-size:1em}
 .signup-form--vertical .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper{float:none;width:100%}
+.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-element-wrapper{float:none;width:100%}
 .banner{background-position:55% 0;min-height:300px}
 .not-home .entry-content{min-height:200px}
 #hero{background-position:-250px 0;background-repeat:no-repeat;background-size:cover;min-height:400px;margin-top:0}
