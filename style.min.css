@@ -3133,10 +3133,11 @@ th.visible-xs,td.visible-xs{display:table-cell !important}
 #signup .module__heading{font-size:1.7em}
 #signup .module__subheading{font-size:1.1em}
 }@media(max-width:375px){.banner{background-position:60% 0;min-height:150px}
-.banner h1{margin:0 34% 0 0;font-size:1.6em}
+.banner h1{margin:0 39% 0 0;font-size:1.4em}
 #hero h1 .caps{margin-top:0;font-size:.8em}
 #hero h2{font-size:.98em}
 }@media(max-width:320px){.signup-form .module__heading{font-size:1.5em}
+.banner h1{margin:0 41% 0 0;font-size:1.3em}
 #hero h1 .top{font-size:.45em;padding-right:5px}
 #hero h1 .caps{font-size:.6em}
 #hero h2{font-size:.8em}

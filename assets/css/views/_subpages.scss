@@ -103,9 +103,13 @@ h6,
               margin: 0 34% 0 0;
               font-size: 1.8em;
            }       
-            @include maxv(375) {
-              margin: 0 34% 0 0;
-              font-size: 1.6em;
+          @include maxv(375) {
+              margin: 0 39% 0 0;
+              font-size: 1.4em;
+           }
+           @include maxv(320) {
+              margin: 0 41% 0 0;
+              font-size: 1.3em;
            }
       }
 }
