@@ -57,6 +57,7 @@
 			    	}
 			    	.menu-icon {
 			    		margin: 0;
+			    		color: $navy;
 
 			    		.burger-menu {
 			    			margin: 0;
@@ -422,7 +423,7 @@
 
 	}
 }
-#mobile-search { cursor: pointer; }
+#mobile-search { cursor: pointer; color: $orange;}
 .show {
 	display: block !important;
 }

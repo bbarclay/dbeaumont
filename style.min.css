@@ -2506,7 +2506,7 @@ a{-webkit-transition:color 150ms ease-out,background 150ms ease-out;transition:c
 #top-header .site-header .sb-search-open .sb-icon-search,#top-header .site-header .no-js .sb-search .sb-icon-search{background:#fff;color:#f15d22;z-index:11;border:1px solid #efeeee;border-bottom-right-radius:50px;border-top-right-radius:50px;border-left:0}
 #top-header .site-header .sb-search-open .sb-search-submit,#top-header .site-header .no-js .sb-search .sb-search-submit{z-index:90}
 #top-header .site-header .sb-search-open .sb-search-input,#top-header .site-header .no-js .sb-search .sb-search-input{border:1px solid #efeeee}
-#mobile-search{cursor:pointer}
+#mobile-search{cursor:pointer;color:#f15d22}
 .show{display:block !important}
 .not-home .top-footer{background:#faf9f8}
 .site-footer{padding:10px 0 20px 0;background:#00274d}
@@ -3031,7 +3031,7 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 #top-header .site-header .mobile-icons li a{display:block;height:50px;line-height:50px}
 #top-header .site-header .mobile-icons li a .fa-search{color:#f15d22}
 #top-header .site-header .mobile-icons li a:hover{text-decoration:none}
-#top-header .site-header .mobile-icons li .menu-icon{margin:0}
+#top-header .site-header .mobile-icons li .menu-icon{margin:0;color:#00274d}
 #top-header .site-header .mobile-icons li .menu-icon .burger-menu{margin:0}
 #top-header .site-header .menu-icon{float:none}
 #top-header .site-header .navbar{position:relative;float:none;width:100%;min-height:auto}
