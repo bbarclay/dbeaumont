@@ -2465,6 +2465,13 @@ a{-webkit-transition:color 150ms ease-out,background 150ms ease-out;transition:c
 #top-header .site-header .site-logo{padding:.56em 0}
 #top-header .site-header .site-logo a{display:block}
 #top-header .site-header .site-logo a img{width:100%;max-width:210px;height:auto}
+#top-header .site-header .mobile-icons li{display:inline-block;margin-left:15px}
+#top-header .site-header .mobile-icons li span{font-size:25px}
+#top-header .site-header .mobile-icons li a{display:block;height:50px;line-height:50px}
+#top-header .site-header .mobile-icons li a .fa-search{color:#f15d22}
+#top-header .site-header .mobile-icons li a:hover{text-decoration:none}
+#top-header .site-header .mobile-icons li .menu-icon{margin:0;color:#00274d}
+#top-header .site-header .mobile-icons li .menu-icon .burger-menu{margin:0}
 #top-header .site-header .menu-icon{display:inline-block;margin:20px 0;float:right;cursor:pointer}
 #top-header .site-header .menu-icon .title{font-size:1.2em;font-family:"bariolregular",sans-serif;color:#00274d;text-transform:uppercase;line-height:0}
 #top-header .site-header .menu-icon .rotate{margin-top:11px}
@@ -3027,13 +3034,6 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 .signup-form--horizontal .moonray-form .moonray-form-clearfix{padding:0}
 #top-header .site-header .site-logo a img{max-width:210px}
 #top-header .site-header .mobile-icons{margin-bottom:0;text-align:right;list-style:none;line-height:60px;height:60px}
-#top-header .site-header .mobile-icons li{display:inline-block;margin-left:15px}
-#top-header .site-header .mobile-icons li span{font-size:25px}
-#top-header .site-header .mobile-icons li a{display:block;height:50px;line-height:50px}
-#top-header .site-header .mobile-icons li a .fa-search{color:#f15d22}
-#top-header .site-header .mobile-icons li a:hover{text-decoration:none}
-#top-header .site-header .mobile-icons li .menu-icon{margin:0;color:#00274d}
-#top-header .site-header .mobile-icons li .menu-icon .burger-menu{margin:0}
 #top-header .site-header .menu-icon{float:none}
 #top-header .site-header .navbar{position:relative;float:none;width:100%;min-height:auto}
 #top-header .site-header .navbar ul.menu{display:none;position:absolute;padding-top:-10px;width:100%;z-index:999;right:0;max-width:200px}
@@ -3065,8 +3065,6 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 #testimonials .testimonial__subtitle{font-size:1em;display:block;margin:0 20px;text-align:center}
 #other-projects{padding-bottom:0}
 #next-step{padding-bottom:0}
-}@media(max-width:992px) and (max-width:320px){#top-header .site-header .mobile-icons li{margin-left:10px}
-}@media(max-width:992px) and (max-width:480px){#top-header .site-header .mobile-icons li{margin-left:15px}
 }@media(max-width:960px){.signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit{width:100% !important}
 .signup-form--horizontal .moonray-form .moonray-form-clearfix .moonray-form-input-type-submit{width:100% !important}
 }@media(max-width:920px){#hero{background-position:-100px 0}
@@ -3092,6 +3090,13 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 #signup .module__subheading{font-size:1.3em;line-height:1}
 #testimonials .testimonial .slick-prev{left:5%}
 #testimonials .testimonial .slick-next{right:5%}
+}@media screen and (max-width:767px){.table-responsive{width:100%;margin-bottom:15px;overflow-y:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;border:1px solid #ddd}
+.table-responsive>.table{margin-bottom:0}
+.table-responsive>.table>thead>tr>th,.table-responsive>.table>thead>tr>td,.table-responsive>.table>tbody>tr>th,.table-responsive>.table>tbody>tr>td,.table-responsive>.table>tfoot>tr>th,.table-responsive>.table>tfoot>tr>td{white-space:nowrap}
+.table-responsive>.table-bordered{border:0}
+.table-responsive>.table-bordered>thead>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child{border-left:0}
+.table-responsive>.table-bordered>thead>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child{border-right:0}
+.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>td{border-bottom:0}
 }@media(max-width:767px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;box-shadow:none}
 .navbar-nav .open .dropdown-menu>li>a,.navbar-nav .open .dropdown-menu .dropdown-header{padding:5px 15px 5px 25px}
 .navbar-nav .open .dropdown-menu>li>a{line-height:20px}
@@ -3116,30 +3121,29 @@ th.visible-xs,td.visible-xs{display:table-cell !important}
 .visible-xs-inline{display:inline !important}
 .visible-xs-inline-block{display:inline-block !important}
 .hidden-xs{display:none !important}
-}@media screen and (max-width:767px){.table-responsive{width:100%;margin-bottom:15px;overflow-y:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;border:1px solid #ddd}
-.table-responsive>.table{margin-bottom:0}
-.table-responsive>.table>thead>tr>th,.table-responsive>.table>thead>tr>td,.table-responsive>.table>tbody>tr>th,.table-responsive>.table>tbody>tr>td,.table-responsive>.table>tfoot>tr>th,.table-responsive>.table>tfoot>tr>td{white-space:nowrap}
-.table-responsive>.table-bordered{border:0}
-.table-responsive>.table-bordered>thead>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child{border-left:0}
-.table-responsive>.table-bordered>thead>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child{border-right:0}
-.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>td{border-bottom:0}
 }@media(max-width:480px){.form #workshop-location{font-size:16px}
 .form{padding:10px 10px}
+#top-header .site-header .mobile-icons li{margin-left:15px}
 .banner{background-position:60% 0;min-height:200px}
 .banner h1{margin:0 34% 0 0;font-size:1.8em}
 #hero{background-position:-153px 0;background-repeat:no-repeat;background-size:cover;min-height:270px;margin-top:0}
 #hero h1{margin-top:10px;line-height:1}
 #hero h1 .top{padding-right:11px;margin-top:0;font-size:.6em}
-#hero h1 .caps{font-size:.9em}
-#hero h2{font-size:1.1em}
+#hero h1 .caps{margin-top:.3em;font-size:.8em}
+#hero h2{font-size:1em}
 #signup .module__heading{font-size:1.7em}
 #signup .module__subheading{font-size:1.1em}
-}@media(max-width:375px){.banner{background-position:60% 0;min-height:150px}
+}@media(max-width:375px){#top-header .site-header .mobile-icons li{margin-left:10px}
+.banner{background-position:60% 0;min-height:150px}
 .banner h1{margin:0 39% 0 0;font-size:1.4em}
+#hero{background-position:-170px 0;min-height:240px}
+#hero h1 .top{font-size:.6em}
 #hero h1 .caps{margin-top:0;font-size:.8em}
 #hero h2{font-size:.98em}
 }@media(max-width:320px){.signup-form .module__heading{font-size:1.5em}
+#top-header .site-header .mobile-icons li{margin-left:10px}
 .banner h1{margin:0 41% 0 0;font-size:1.3em}
+#hero{background-position:-170px 0}
 #hero h1 .top{font-size:.45em;padding-right:5px}
 #hero h1 .caps{font-size:.6em}
 #hero h2{font-size:.8em}

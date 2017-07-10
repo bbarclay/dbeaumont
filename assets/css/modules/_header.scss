@@ -22,13 +22,16 @@
 				}
 			}
 		}
-		@include maxv(992)  {
-			.mobile-icons {
+		
+		.mobile-icons {
+
+			@include maxv(992)  {
 				margin-bottom: 0;
 			    text-align: right;
 			    list-style: none;
  				line-height: 60px;
     			height: 60px;
+    		}
 
 			    li {
 			    	display: inline-block;
@@ -39,6 +42,9 @@
 			    	}
 			    	 @include maxv(480)  {
 			    	 	margin-left: 15px;
+			    	 }
+			    	 @include maxv(375)  {
+			    	 	margin-left: 10px;
 			    	 }
 			    	 @include maxv(320)  {
 			    	 	margin-left: 10px;
@@ -64,8 +70,8 @@
 			    		}
 			    	}
 			    }
-			}
 		}
+		
 		.menu-icon{
 			display: inline-block;
     		margin: 20px 0;
