@@ -64,6 +64,8 @@
                -webkit-animation-delay: 1.5s;
                animation-delay: 1.5s;
                color: $orange;
+               display: block;
+               visibility: hidden;
 
                 @include minv(1500)  {
                      font-size: 1.2em;
@@ -92,11 +94,11 @@
             font-family: $font--bariolbold;
             text-transform: uppercase;
             font-size: 1.4em;
-
-            margin-top: 20px;
+            visibility: hidden;
              -webkit-animation-delay: 2s;
             animation-delay: 2s;
             color: $navy;
+            display: block;
 
               @include minv(1500)  {
                    font-size: 1.7em;
@@ -126,6 +128,7 @@
         animation-delay: 2.5s;
         font-size: 1.6em;
         font-family: $font--bariolregular;
+        visibility: hidden;
 
          @include minv(1500)  {
             font-size: 1.8em;
