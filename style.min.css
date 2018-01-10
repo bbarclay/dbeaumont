@@ -2627,6 +2627,7 @@ h6,.h6{font-size:1em}
 .module__media .image a{display:block;text-align:center}
 #testimonial-page{margin-top:0}
 #testimonial-page .module:first-child{margin-top:2em}
+.single-post .entry__title{line-height:1;margin:0 0 30px 0}
 #hero{background-position:0 0;background-repeat:no-repeat;background-size:cover;margin:0;min-height:440px}
 #hero h1{margin-top:1.5em;text-align:right;color:#000}
 #hero h1 .top{margin-top:1.5em;font-family:"bariollight-italic",sans-serif;-webkit-animation-delay:1.5s;animation-delay:1.5s;color:#f15d22;display:block;visibility:hidden}

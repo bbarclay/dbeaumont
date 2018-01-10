@@ -4,7 +4,6 @@
 			<?php the_title(); ?>
 		</h1>
 		
-		<?php get_template_part( 'partials/post-meta' ); ?>
 	</header>
 
 	<div class="entry__content" itemprop="articleBody">
