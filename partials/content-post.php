@@ -12,6 +12,6 @@
 		<?php daleb_link_pages(); ?>
 	</div>
 
-	<?php get_template_part( 'partials/post-footer' ); ?>
+	<?php //get_template_part( 'partials/post-footer' ); ?>
 
 </article>
