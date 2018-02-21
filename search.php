@@ -16,7 +16,6 @@
 
 		</div>
 
-		<?php echo adrotate_group(2); ?>
 	</div>
 	
 <?php get_footer(); ?>
