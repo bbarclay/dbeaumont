@@ -190,6 +190,24 @@ $(document).ready(function(){
 
 	});
 
+	window.onload = function() {
+
+		var hash = location.hash;
+
+			if( location.hash ) {
+
+				setTimeout(function(){
+
+					$('html, body').animate({
+
+						scrollTop: $(hash).offset().top,
+
+					}, 2000);
+
+				}, 1);
+
+			}
+	};
 
    //SLICK SLIDER TESTIMONIALS	
 	$(".home .testimonial").slick({
