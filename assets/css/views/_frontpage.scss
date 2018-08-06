@@ -8,13 +8,15 @@
     background-position: 0 0;
     background-size: cover;
 
+    @include minv(1200) {
+        min-height: 440px;
+
+        background-position: 0 0;
+    }
     @include maxv(1200) {
         min-height: 370px;
 
         background-position: 0 0;
-    }
-    @include maxv(320) {
-        background-position: -170px 0;
     }
     @include maxv(375) {
         min-height: 240px;
@@ -43,10 +45,8 @@
     @include maxv(992) {
         min-height: 350px;
     }
-    @include minv(1200) {
-        min-height: 440px;
-
-        background-position: 0 0;
+    @include maxv(320) {
+        background-position: -170px 0;
     }
 
     &.align-left {
@@ -505,6 +505,16 @@
         .slick-next {
             @include maxv(768) {
                 right: 5%;
+            }
+        }
+    }
+    .slick-list {
+        .slick-slide {
+            @include maxv(1200) {
+                padding: 0 40px;
+            }
+            @include maxv(768) {
+                padding: 0;
             }
         }
     }
