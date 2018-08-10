@@ -44,7 +44,7 @@ get_header(); ?>
                						<section class="module module--features">
 	
 										<div class="container">     
-									    	<h2 class="module__title"><?php the_sub_field( 'title' ); ?></h2>
+									    	<h2 class="module__title"><?php echo get_the_title(); ?></h2>
 									        	<?php if ( have_rows( 'photos' ) ) : ?>
 									        	
 									        	<div class="row">
