@@ -8,29 +8,18 @@
     background-position: 0 0;
     background-size: cover;
 
-    @include minv(1200) {
-        min-height: 440px;
-
-        background-position: 0 0;
-    }
     @include maxv(1200) {
         min-height: 370px;
 
         background-position: 0 0;
     }
-    @include maxv(992) {
-        min-height: 350px;
+    @include maxv(320) {
+        background-position: -170px 0;
     }
-    @include maxv(920) {
-        background-position: -100px 0;
-    }
-    @include maxv(768) {
-        min-height: 400px;
-        margin-top: 0;
+    @include maxv(375) {
+        min-height: 240px;
 
-        background-repeat: no-repeat;
-        background-position: -250px 0;
-        background-size: cover;
+        background-position: -170px 0;
     }
     @include maxv(480) {
         min-height: 270px;
@@ -40,27 +29,38 @@
         background-position: -153px 0;
         background-size: cover;
     }
-    @include maxv(375) {
-        min-height: 240px;
+    @include maxv(768) {
+        min-height: 400px;
+        margin-top: 0;
 
-        background-position: -170px 0;
+        background-repeat: no-repeat;
+        background-position: -250px 0;
+        background-size: cover;
     }
-    @include maxv(320) {
-        background-position: -170px 0;
+    @include maxv(920) {
+        background-position: -100px 0;
+    }
+    @include maxv(992) {
+        min-height: 350px;
+    }
+    @include minv(1200) {
+        min-height: 440px;
+
+        background-position: 0 0;
     }
 
     &.align-left {
-        @include maxv(320) {
-            background-position: -300px 0;
-        }
-        @include maxv(375) {
-            background-position: -270px 0;
+        @include maxv(768) {
+            background-position: -500px 0;
         }
         @include maxv(480) {
             background-position: -280px 0;
         }
-        @include maxv(768) {
-            background-position: -500px 0;
+        @include maxv(375) {
+            background-position: -270px 0;
+        }
+        @include maxv(320) {
+            background-position: -300px 0;
         }
         h1,
         h2 {
@@ -78,18 +78,18 @@
 
         color: #000;
 
-        @include maxv(992) {
-            margin-top: 1em;
+        @include maxv(480) {
+            margin-top: 10px;
+
+            line-height: 1;
         }
         @include maxv(768) {
             margin-top: 50px;
 
             line-height: 1;
         }
-        @include maxv(480) {
-            margin-top: 10px;
-
-            line-height: 1;
+        @include maxv(992) {
+            margin-top: 1em;
         }
         .top {
             display: block;
@@ -103,16 +103,13 @@
 
             color: $orange;
 
-            @include minv(1500) {
-                font-size: 1.2em;
-            }
-            @include maxv(992) {
-                margin-top: 1em;
-            }
-            @include maxv(768) {
-                margin-top: 1em;
+            @include maxv(320) {
+                padding-right: 5px;
 
-                font-size: .8em;
+                font-size: .45em;
+            }
+            @include maxv(375) {
+                font-size: .6em;
             }
             @include maxv(480) {
                 padding-right: 11px;
@@ -120,13 +117,16 @@
 
                 font-size: .6em;
             }
-            @include maxv(375) {
-                font-size: .6em;
-            }
-            @include maxv(320) {
-                padding-right: 5px;
+            @include maxv(768) {
+                margin-top: 1em;
 
-                font-size: .45em;
+                font-size: .8em;
+            }
+            @include maxv(992) {
+                margin-top: 1em;
+            }
+            @include minv(1500) {
+                font-size: 1.2em;
             }
         }
         .caps {
@@ -142,26 +142,26 @@
 
             color: $navy;
 
-            @include minv(1500) {
-                font-size: 1.7em;
-            }
-            @include maxv(768) {
-                margin-top: .5em;
-
-                font-size: 1.1em;
-            }
-            @include maxv(480) {
-                margin-top: .3em;
-
-                font-size: .8em;
+            @include maxv(320) {
+                font-size: .6em;
             }
             @include maxv(375) {
                 margin-top: 0;
 
                 font-size: .8em;
             }
-            @include maxv(320) {
-                font-size: .6em;
+            @include maxv(480) {
+                margin-top: .3em;
+
+                font-size: .8em;
+            }
+            @include maxv(768) {
+                margin-top: .5em;
+
+                font-size: 1.1em;
+            }
+            @include minv(1500) {
+                font-size: 1.7em;
             }
         }
     }
@@ -177,8 +177,14 @@
 
         color: $navy;
 
-        @include minv(1500) {
-            font-size: 1.8em;
+        @include maxv(320) {
+            font-size: .8em;
+        }
+        @include maxv(375) {
+            font-size: .98em;
+        }
+        @include maxv(480) {
+            font-size: 1em;
         }
         @include maxv(768) {
             width: 65%;
@@ -187,14 +193,8 @@
             font-size: 1.2em;
             line-height: 1.3;
         }
-        @include maxv(480) {
-            font-size: 1em;
-        }
-        @include maxv(375) {
-            font-size: .98em;
-        }
-        @include maxv(320) {
-            font-size: .8em;
+        @include minv(1500) {
+            font-size: 1.8em;
         }
 
         span {
@@ -224,11 +224,11 @@
 
             text-transform: capitalize;
 
-            @include maxv(768) {
-                font-size: 2em;
-            }
             @include maxv(480) {
                 font-size: 1.7em;
+            }
+            @include maxv(768) {
+                font-size: 2em;
             }
             &--caps {
                 text-transform: uppercase;
@@ -242,12 +242,12 @@
             font-family: $font--bariol-light;
             font-size: 1.42em;
 
+            @include maxv(480) {
+                font-size: 1.1em;
+            }
             @include maxv(768) {
                 font-size: 1.3em;
                 line-height: 1;
-            }
-            @include maxv(480) {
-                font-size: 1.1em;
             }
         }
     }
@@ -295,12 +295,13 @@
     }
     .logos {
         display: flex;
+        margin: 0 -30px;
 
         flex-wrap: wrap;
     }
     .item {
         width: 25%;
-        padding: 10px;
+        padding: 10px 30px;
 
         @include maxv(600) {
             width: 50%;
@@ -539,11 +540,11 @@
     }
     .slick-list {
         .slick-slide {
-            @include maxv(768) {
-                padding: 0;
-            }
             @include maxv(1200) {
                 padding: 0 40px;
+            }
+            @include maxv(768) {
+                padding: 0;
             }
         }
     }
