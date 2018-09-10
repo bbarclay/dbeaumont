@@ -29,7 +29,7 @@
 		 	 	 	 </div>
 		 	 	 </a>
 		 	 </div>
-		 	 <?php if($count % 2 == 0) { ?><div class="clearfix visible-sm-block"></div><?php } ?>
+		 	 <?php if($count % 2 == 0) { ?><div class="clearfix visible-sm-block visible-xs-block"></div><?php } ?>
 		 	 <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
     		 <?php endif; ?> 
 			 <?php endwhile; ?>
