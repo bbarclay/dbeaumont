@@ -817,7 +817,10 @@ textarea {
 }
 
 .col-custom {
-    width: 100%;
+    @include maxv(480) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 .btn-block {
     margin: 30px 0;
