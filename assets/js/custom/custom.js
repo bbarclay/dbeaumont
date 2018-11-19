@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 	new UISearch( document.getElementById( 'sb-search' ) );
 	var is_frontpage = document.querySelector('.home');
+	var is_homepage_template = document.querySelector('.page-template-template-frontpage');
 
 	$(window).load(function(){ 
 
@@ -87,14 +88,14 @@ $(document).ready(function(){
 
 		function frontpage() {
 
-			if( is_frontpage ) {
+			if( is_frontpage || is_homepage_template ) {
 
 				var controller = new ScrollMagic.Controller();
 				var controller2 = new ScrollMagic.Controller();
 				var controller3 = new ScrollMagic.Controller();
 				var controller4 = new ScrollMagic.Controller();
 
-				// build scenes
+
 				//typical import
 				var hero_tl = new TimelineLite(),
 					hero_top = document.querySelector('#hero .top'), 
@@ -102,25 +103,46 @@ $(document).ready(function(){
 					hero_subtitle = document.querySelector('#hero .subtitle');
 
 				    hero_tl
-				    	   .fromTo(hero_top, 0.3, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0 }, '+=0.5' )
-				    	   .fromTo(hero_caps, 0.2, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0 } )
-				    	   .fromTo(hero_subtitle, 0.3, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0 } );
+				    	   .fromTo(hero_top, 0.3, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0 } )
+				    	   .fromTo(hero_caps, 0.5, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0 } )
+				    	   .fromTo(hero_subtitle, 0.4, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0 } );
 
 
 				new ScrollMagic.Scene({triggerElement: "#hero"})
 					.setTween(hero_tl)
 					.addTo(controller2);
 
+
+				// ----------------------------//	
+				//typical import
+				var signup_tl         = new TimelineLite(),
+					signup_heading    = document.querySelector('#signup h2'), 
+					signup_subheading = document.querySelector('#signup .module__subheading'),
+					signup_form       = document.querySelector('.signup-form--horizontal');
+
+				    signup_tl
+				    	   .fromTo(signup_heading, 0.3, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0 },'+=1' )
+				    	   .fromTo(signup_subheading, 0.5, { autoAlpha: 0, y: 60 }, { autoAlpha: 1, y: 0 } )
+				    	   .fromTo(signup_form, 0.4, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0 } );
+
+
+				new ScrollMagic.Scene({
+						triggerElement: "#signup",
+						triggerHook: 0.9
+					})
+					.setTween(signup_tl)
+					.addTo(controller2);	
+
+
+
+				 // ----------------------------//		
 				//projects
-				var featured_tw = new TimelineLite(),
+				var featured_tw = new TimelineMax(),
 					fh1_tween = '',
 					featured_heading = document.querySelector('#projects h2');
-					project = document.querySelectorAll("#projects .col-custom");
+					project = document.querySelector("#projects .col-custom");
 
 
-				   featured_tw
-				   			 .set(project, { autoAlpha: 0})   
-				   			 .staggerFromTo(project, 0.3, {autoAlpha: 0, y: 100}, {autoAlpha: 1, y: 0}, '0.3') 
 
 				   	fh1_tween = TweenMax.fromTo(featured_heading, 0.5, {autoAlpha: 0, y: 100}, {autoAlpha: 1, y: 0});		 
 
@@ -129,9 +151,29 @@ $(document).ready(function(){
 					.addTo(controller);	
 
 
-				new ScrollMagic.Scene({triggerElement: ".project", reverse: false, triggerHook: 1,})
-					.setTween(featured_tw)
-					.addTo(controller4);
+				// new ScrollMagic.Scene({triggerElement: ".project", reverse: false, triggerHook: 1,})
+				// 	.setTween(featured_tw)
+				// 	.addTo(controller4);
+					var ctrlProject = new ScrollMagic.Controller();
+
+
+					$('#projects .col-custom').each(function(){
+
+						var target = $(this);
+
+						featured_tw.fromTo(target, 0.3, {y: 100}, {autoAlpha: 1, y: 0})
+
+						 // Create a scene for each project
+						 var myScene = new ScrollMagic.Scene({
+						 	triggerElement: this,
+						 	triggerHook: 0.9
+						 })
+						 .addIndicators()
+						 .setTween(featured_tw, featured_tw)
+						 .addTo(ctrlProject);
+
+					});
+
 
 
 				var media 	= document.querySelector('.media-logos');
