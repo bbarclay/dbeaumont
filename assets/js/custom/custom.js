@@ -146,7 +146,7 @@ $(document).ready(function(){
 
 				   	fh1_tween = TweenMax.fromTo(featured_heading, 0.5, {autoAlpha: 0, y: 100}, {autoAlpha: 1, y: 0});		 
 
-				new ScrollMagic.Scene({triggerElement: "#projects h2", reverse: false, triggerHook: 1,})
+				new ScrollMagic.Scene({triggerElement: "#projects h2", reverse: false, triggerHook: 1})
 					.setTween(fh1_tween)
 					.addTo(controller);	
 
@@ -154,6 +154,7 @@ $(document).ready(function(){
 				// new ScrollMagic.Scene({triggerElement: ".project", reverse: false, triggerHook: 1,})
 				// 	.setTween(featured_tw)
 				// 	.addTo(controller4);
+				
 					var ctrlProject = new ScrollMagic.Controller();
 
 
@@ -161,7 +162,7 @@ $(document).ready(function(){
 
 						var target = $(this);
 
-						featured_tw.fromTo(target, 0.3, {y: 100}, {autoAlpha: 1, y: 0})
+						featured_tw.fromTo(target, 0.5, {y: 100}, {autoAlpha: 1, y: 0})
 
 						 // Create a scene for each project
 						 var myScene = new ScrollMagic.Scene({
@@ -174,14 +175,46 @@ $(document).ready(function(){
 					});
 
 
+				if( is_frontpage ) {
 
-				var media 	= document.querySelector('.media-logos');
+					//Books
+					var bookHeading 	   	   = document.querySelector('#books h2');	
+					var booksList 	           = document.querySelectorAll('#books .col-custom');	
+					var controllerBookHeading  = new ScrollMagic.Controller();
+					var bookTLHeading 		   = new TimelineLite();	
 
-				var zoomImg = TweenMax.fromTo(media, 1, { autoAlpha: 0, scale: 0.5 }, { autoAlpha: 1, scale: 1 });		
+					bookTLHeading
+						  .fromTo(bookHeading, 0.3, { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0 })
+						  .staggerFromTo(booksList, 1, {autoAlpha: 0, y: 30},{autoAlpha: 1, y: 0}, '0.3')
 
-				new ScrollMagic.Scene({triggerElement: "#featured .image", reverse: false, triggerHook: 0.8,})
-					.setTween(zoomImg)
-					.addTo(controller4);					
+		       
+					//Blogs
+					new ScrollMagic.Scene({triggerElement: bookHeading, reverse: false, triggerHook: 0.9,})
+						.setTween(bookTLHeading) // add class toggle
+						.addTo(controllerBookHeading);	
+
+
+
+						var featuredImages 	= document.querySelectorAll('#featured .grid .item');
+
+						var revealImg = TweenMax.staggerFromTo(featuredImages, 1, { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0 }, '0.2');		
+
+						new ScrollMagic.Scene({triggerElement: "#featured .image", reverse: false, triggerHook: 0.7})
+							.setTween(revealImg)
+							.addTo(controller4);	
+
+
+				} else {
+
+					var media 	= document.querySelector('#featured .media-logos');
+
+					var zoomImg = TweenMax.fromTo(media, 1, { autoAlpha: 0, scale: 0.5 }, { autoAlpha: 1, scale: 1 });		
+
+					new ScrollMagic.Scene({triggerElement: "#featured .image", reverse: false, triggerHook: 0.8,})
+						.setTween(zoomImg)
+						.addTo(controller4);	
+				}		
+					
 
 
 				//Watch
@@ -189,27 +222,47 @@ $(document).ready(function(){
 					.setClassToggle("#video h2", "pulse") // add class toggle
 					.addTo(controller);	
 
+				/**
+				 * Featured Heading
+				 * @type {[type]}
+				 */
+			    var featuredHeading 	   = document.querySelector('#featured-blogs h2');		
+				var controllerBlogHeading  = new ScrollMagic.Controller();
+				var blogTLHeading 		   = new TimelineLite();	
+
+				blogTLHeading
+					  .fromTo(featuredHeading, 0.3, { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0 });
 
 		       
 				//Blogs
-				new ScrollMagic.Scene({triggerElement: "#featured-blogs h2", duration: '100%', reverse: false, triggerHook: 1,})
-					.setClassToggle("#featured-blogs h2", "slideInUp") // add class toggle
-					.addTo(controller);	
+				new ScrollMagic.Scene({triggerElement: featuredHeading, reverse: false, triggerHook: 0.9,})
+					.setTween(blogTLHeading) // add class toggle
+					.addTo(controllerBlogHeading);	
 
 
-				var blog_tw = new TimelineLite(),
-					blog_tween = '',
-					blog = document.querySelectorAll("#featured-blogs .blog__panel");
+
+
+				var blog_tween      = '',
+					blog 			= document.querySelectorAll("#featured-blogs .blog__panel"),
+					controllerBlog  = new ScrollMagic.Controller();
+
+				// Loop through ‘.project’ elements (jQuery loop)
+				$('#featured-blogs .blog__panel').each(function(){
+
+					var blog_tw         = new TimelineLite();
 
 					blog_tw 
-					  .staggerFromTo(blog, 0.3, { autoAlpha: 0, y: 200 }, { autoAlpha: 1, y: 0 }, '0.3');
+					  .fromTo(this, 0.7, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0 });
 
-					
-
-				new ScrollMagic.Scene({triggerElement: blog,  reverse: false, triggerHook: 1})
-									.setTween(blog_tw)
-									.addTo(controller4);
-
+						 // Create a scene for each project
+						 var myScene = new ScrollMagic.Scene({
+						 		 triggerElement: this,
+						 		 triggerHook: "onEnter"
+						 })
+						 .setTween(blog_tw)
+						 .addTo(controllerBlog);
+						 
+				});	
 
 						
 				//Other Projects
@@ -220,8 +273,6 @@ $(document).ready(function(){
 				new ScrollMagic.Scene({triggerElement: "#other-projects .project-2", duration: '100%', reverse: false,  triggerHook: 1,})
 					.setClassToggle("#other-projects .project-2", "fadeInRight") // add class toggle
 					.addTo(controller4);	
-
-
 				//Next Steps
 				new ScrollMagic.Scene({triggerElement: ".step-1", duration: '100%', reverse: false,  triggerHook: 1,})
 					.setClassToggle(".step-1", "fadeInLeft") // add class toggle
