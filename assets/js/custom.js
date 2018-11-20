@@ -168,7 +168,6 @@ $(document).ready(function(){
 						 	triggerElement: this,
 						 	triggerHook: 0.9
 						 })
-						 .addIndicators()
 						 .setTween(featured_tw, featured_tw)
 						 .addTo(ctrlProject);
 
